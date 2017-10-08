@@ -3,7 +3,7 @@ import UIKit
 
 
 class CustomMenuCell : UITableViewCell{
-  func myItemAction(sender:AnyObject?){
+  @objc func myItemAction(_ sender:AnyObject?){
     print("Did something new!")
   }
 }

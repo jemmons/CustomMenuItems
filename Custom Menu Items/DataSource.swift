@@ -3,12 +3,11 @@ import UIKit
 
 
 class DataSource : NSObject, UITableViewDataSource{
-  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return 4
   }
   
-  
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    return tableView.dequeueReusableCellWithIdentifier("CustomMenuCell", forIndexPath: indexPath)
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    return tableView.dequeueReusableCell(withIdentifier: "CustomMenuCell", for: indexPath)
   }
 }
